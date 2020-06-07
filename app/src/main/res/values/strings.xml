@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Submission_Dicoding</string>
+    <string name="bikes_name">Nama Sepeda</string>
+    <string name="home">Home</string>
+    <string name="detail_menu">Detail</string>
+    <string name="about">About Me</string>
+    <string name="dummy_photos">6 photos</string>
+    <string name="stock">Stock Terbatas</string>
+    <string name="buy">Beli</string>
+    <string name="specification">Spesifikasi</string>
+    <string name="frame_name">Frame</string>
+    <string name="frame_size">Frame Size</string>
+    <string name="color">Color</string>
+    <string name="fork">Fork</string>
+    <string name="shock">Shock</string>
+    <string name="grupset">GrupSet</string>
+    <string name="brakes">Brakes</string>
+    <string name="weight">Weight</string>
+    <string name="share">Share</string>
+    <string name="keranjang">Add</string>
+</resources>

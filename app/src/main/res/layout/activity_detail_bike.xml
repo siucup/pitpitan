@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".adapter.AdapterDetailBike"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_item_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    style="@style/TextContent.Small.White"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#4D000000"
+                    android:drawableStart="@drawable/ic_collections_white_18dp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/dummy_photos"
+                    android:textColor="@android:color/white"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_item_price"
+                style="@style/TextContent.Black"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="30sp"/>
+
+            <TextView
+                style="@style/TextContent.Subtitle"
+                android:layout_marginBottom="16dp"
+                android:text="@string/stock"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_item_detail"
+                style="@style/TextContent"
+                android:layout_marginBottom="16dp"
+                android:lineSpacingMultiplier="1"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                style="@style/TextContent.Subtitle"
+                android:layout_marginBottom="8dp"
+                android:text="@string/specification"
+                android:textStyle="bold"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/frame_name"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_name"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/frame_size"
+                        android:textStyle="bold"/>
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_size"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/color"
+                        android:textStyle="bold"/>
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_color"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/fork"
+                        android:textStyle="bold"/>
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_fork"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/shock"
+                        android:textStyle="bold"/>
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_shock"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/grupset"
+                        android:textStyle="bold"/>
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_grupset"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/brakes"
+                        android:textStyle="bold"/>
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_brake"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/weight"
+                        android:textStyle="bold"/>
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_weight"/>
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btn_buy"
+                style="@style/ButtonGeneral"
+                android:text="@string/buy"/>
+        </LinearLayout>
+    </ScrollView>
+</layout>
